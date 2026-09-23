@@ -58,3 +58,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
 footer a{color:#fff;margin-right:14px}
 @media (max-width:760px){.split,.grid2{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}}
 @media (max-width:460px){.grid4{grid-template-columns:1fr}}
+
+/* Bright, sharp photo panels and light (non-blue) banners */
+.hero{background:var(--card);color:var(--head);padding:52px 0;border-bottom:1px solid var(--line)}
+.hero .tag{color:var(--blue);opacity:1}
+.hero p{color:var(--mute)}
+.hero .btn{background:var(--btn);color:var(--btnink)}
+.phero{background:var(--card);color:var(--head);border-bottom:1px solid var(--line)}
+.split{max-width:1120px;margin:28px auto 0;padding:0 20px;gap:16px}
+.pane{min-height:280px;padding:0;border-radius:8px;overflow:hidden;background-color:#e9edf3}
+.pane:before{display:none}
+.pane.p1{background-position:center}
+.pane.p2{background-position:center 30%}
+.pane h3{background:rgba(255,255,255,.93);color:#0b2447;padding:10px 16px 0}
+.pane span{display:block;background:rgba(255,255,255,.93);color:#16202f;padding:0 16px 10px;font-size:16px}
