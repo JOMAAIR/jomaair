@@ -1,0 +1,60 @@
+:root{--navy:#0b2447;--blue:#1d4ea3;--bg:#fff;--ink:#16202f;--mute:#5a6678;--line:#d9e1ee;--card:#f6f8fc;--btn:#0b2447;--btnink:#fff;--head:#0b2447}
+@media (prefers-color-scheme:dark){:root{--navy:#07152e;--blue:#7ea6f0;--bg:#0c1220;--ink:#e6ecf7;--mute:#9aa8c0;--line:#25324d;--card:#131c30;--btn:#7ea6f0;--btnink:#07152e;--head:#e6ecf7}}
+*,*:before,*:after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,"Times New Roman",serif}
+h1,h2,h3,h4,nav,.btn,.tag,.top,footer{font-family:"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:var(--blue)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.top{background:var(--navy);color:#fff;font-size:13px;padding:8px 0}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.top a{color:#fff}
+header.brand{border-bottom:1px solid var(--line)}
+header.brand .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+.logo{text-decoration:none}
+.logo b{display:block;font:800 28px "Segoe UI",Arial,sans-serif;color:var(--head);letter-spacing:.06em}
+.logo span{font:13px "Segoe UI",Arial,sans-serif;color:var(--mute)}
+.btn{display:inline-block;background:var(--btn);color:var(--btnink);padding:11px 22px;border-radius:6px;font-weight:600;text-decoration:none;font-size:15px}
+nav{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+nav .wrap{display:flex;gap:4px 22px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+nav a{text-decoration:none;color:var(--ink);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+nav a:hover,nav a.on{color:var(--blue)}
+.hero{background:linear-gradient(135deg,var(--navy),#1d4ea3);color:#fff;text-align:center;padding:72px 0}
+.hero .tag{margin:0 0 14px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.hero h1{margin:0 0 16px;font-size:clamp(28px,5vw,46px);line-height:1.15}
+.hero p{max-width:640px;margin:0 auto 26px}
+.hero .btn{background:#fff;color:#0b2447}
+.phero{background:linear-gradient(135deg,var(--navy),#1d4ea3);color:#fff;padding:38px 0}
+.phero h1{margin:0;font-size:32px}
+.split{display:grid;grid-template-columns:1fr 1fr}
+.pane{min-height:220px;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;color:#fff;font-family:"Segoe UI",Arial,sans-serif;background-size:cover;background-position:center;position:relative}
+.pane:before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,21,46,.85),rgba(7,21,46,.2))}
+.pane>*{position:relative}
+.pane h3{margin:0;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.pane span{font-size:18px}
+.p1{background-image:url('../images/petrochemical.jpg'),linear-gradient(160deg,#0b2447,#33507f)}
+.p2{background-image:url('../images/conference.jpg'),linear-gradient(160deg,#1d4ea3,#4a7fd1)}
+section{padding:48px 0}
+section.alt{background:var(--card)}
+h2{font-size:26px;color:var(--head);margin:0 0 8px}
+.eyebrow{font:600 12px "Segoe UI",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 6px}
+.prose{max-width:780px}
+.prose h2{margin-top:32px}
+.issue,.card{border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.issue{margin-top:20px}
+.art{padding:16px 20px;border-bottom:1px solid var(--line)}
+.art:last-child{border:0}
+.art h3{margin:0 0 2px;font-size:18px}
+.art p{margin:0;color:var(--mute);font-size:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{padding:20px}
+.card h3,.card h4{margin:0 0 8px;font-size:16px;color:var(--head)}
+.card p,.card li{font-size:14.5px;color:var(--mute);margin:0}
+.card ul{margin:0;padding-left:18px}
+.card a.more{display:inline-block;margin-top:10px;font:600 13px "Segoe UI",Arial,sans-serif}
+footer{background:var(--navy);color:#dbe6fa;padding:30px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:#fff;margin-right:14px}
+@media (max-width:760px){.split,.grid2{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.grid4{grid-template-columns:1fr}}
