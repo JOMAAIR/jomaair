@@ -57,3 +57,6 @@ footer a{color:#fff;margin-right:14px}
 .article.lead h3 .qual{font-size:20px}
 .article.lead .meta{font-size:16px;color:var(--ink)}
 .article h3 .qual{font-size:15px}
+.article.staff h3{font-size:17px}
+.article.staff h3 .qual{font-size:14px}
+.article.staff .meta{font-size:13px}
